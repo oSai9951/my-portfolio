@@ -1,229 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Suman Maharana - Portfolio</title>
+  </head>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <body>
+    <!-- Header Section Code -->
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <header class="header">
+      <a href="#home" class="logo">Sai Suman Maharana</a>
 
-    <link rel="stylesheet" href="styles.css">
+      <i class="bx bx-menu" id="menu-icon"></i>
 
-    <title>Portfolio</title>
-</head>
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-<body>
-    <!-- NAVBAR -->
-    <nav>
-        <div class="left">
-            <a href="/">Sai Suman Maharana</a>
+    <!-- Home Section Contact -->
+    <section class="home" id="home">
+      <div class="home-img">
+        <img src="assets/Sai.png" alt="Profile Image" />
+      </div>
+      <div class="home-content">
+        <h3>Hello, Myself</h3>
+        <h1>Sai Suman Maharana</h1>
+        <h3>
+          And I'm a <span class="multiple-text">Full Stack Developer</span>
+        </h3>
+        <p>
+          I am a passionate Full Stack Developer with expertise in building
+          dynamic and responsive web applications.
+        </p>
+
+        <div class="social-media">
+          <a href="https://www.linkedin.com/in/saimaharana/"
+            ><i class="bx bxl-linkedin-square"></i
+          ></a>
+          <a href="https://github.com/oSai9951"
+            ><i class="bx bxl-github"></i
+          ></a>
+        </div><!-- https://drive.google.com/file/d/1cvx8seavXQR2QJJuaE7M9P3rvARjmeNV/view?usp=sharing -->
+        <a
+        
+          href="https://drive.google.com/uc?export=download&id=1cvx8seavXQR2QJJuaE7M9P3rvARjmeNV"
+          class="btn"
+          >Download CV</a
+        >
+      </div>
+    </section>
+    <!-- /*.home-img img box-shadow: 0 0 25px rgba(59, 130, 246, 0.4);  cursor: pointer;/* blue-ish soft glow */
+/*home background: #f0f4f8;*/ -->
+
+    <!-- About Section Code -->
+    <section class="about" id="about">
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+       
+        <p>
+          I am a passionate Full Stack Developer with expertise in building
+          dynamic and responsive web applications. I have a strong foundation in
+          both front-end and back-end technologies, allowing me to create
+          seamless user experiences and robust server-side functionalities. My
+          skills include HTML, CSS, JavaScript, React, Node.js, Express.js and
+          MongoDB. I am committed to continuous learning and staying updated
+          with the latest industry trends to deliver high-quality solutions.
+        </p>
+        <a href="#skills" class="btn">Read More</a>
+      </div>
+
+      <div class="about-img">
+        <img src="assets/Sai.png" alt="Profile Image" />
+      </div>
+    </section>
+
+    <!-- Skills-->
+    <section class="skills" id="skills">
+      <h2 class="heading">My <span>Skills</span></h2>
+      <div class="skills-container">
+        <div class="skills-box">
+          <img
+            src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000"
+          />
+          <p>HTML</p>
         </div>
 
-        <div class="right">
-            <a href="https://www.github.com/oSai9951" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-github"></i>
-                <span>Github</span>
-            </a>
-
-            <a href="www.linkedin.com/in/saimaharana" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-linkedin"></i>
-                <span>Linkedin</span>
-            </a>
-
-            <a href="mailto:saimaharana24@gmail.com">
-                <i class="fa-solid fa-envelope"></i>
-                <span>Email</span>
-            </a>
-        </div>
-    </nav>
-
-    <main>
-        <!-- SECTION 1: Hero -->
-        <section class="hero-section">
-            <div class="text">
-                <h2>Hi, I'm Sai Suman Maharana 👋</h2>
-                <p>Front-end Developer skilled in HTML, CSS, JavaScript, and React.js, with experience in building
-                    dynamic and responsive web applications.
-                    I have developed projects including a yoga website, an e-commerce platform, and a news website. I
-                    have worked both individually and collaboratively in a team environment, ensuring efficient UI
-                    development and seamless user experiences. I am passionate about writing clean, maintainable code
-                    and continuously enhancing my technical skills. I am seeking opportunities to contribute to
-                    innovative web solutions.</p>
-
-                <div class="links">
-                    <a href="#skills">
-                        <i class="fa-solid fa-code"></i>
-                        <span>Skills</span>
-                    </a>
-
-                    <a href="#project">
-                        <i class="fa-solid fa-diagram-project"></i>
-                        <span>Projects</span>
-                    </a>
-
-                    <a href="#certificate">
-                        <i class="fa-solid fa-envelope"></i>
-                        <span>Certificates</span>
-                    </a>
-                </div>
-            </div>
-
-            <div class="headshot">
-                <img src="images/Sai.png" alt="john doe headshot">
-            </div>
-        </section>
-
-        <!-- SECTION 2: Skills -->
-        <section id="skills" class="skills-section">
-            <h2>Skills</h2>
-            <div class="text">
-                I excel in front-end development, leveraging expertise in HTML, CSS, JavaScript, and React.js to build
-                responsive and engaging web applications. My skills empower me to create intuitive user interfaces and
-                ensure seamless performance across all devices.
-            </div>
-
-            <div class="cells">
-                <div class="cell">
-                    <i class="fa-brands fa-html5 fa-2x"></i>
-                    <span>HTML</span>
-                </div>
-
-                <div class="cell">
-                    <i class="fa-brands fa-css3 fa-2x"></i>
-                    <span>CSS</span>
-                </div>
-
-                <div class="cell">
-                    <i class="fa-brands fa-js fa-2x"></i>
-                    <span>JavaScript</span>
-                </div>
-
-
-                <div class="cell">
-                    <i class="fa-brands fa-react fa-2x"></i>
-                    <span>React.js</span>
-                </div>
-            </div>
-        </section>
-        <!--Education-->
-        <section class="education-section">
-            <h2>Education</h2>
-            <div class="education-item">
-                <div class="institute">Chandigarh University</div>
-                <div class="degree">Bachelor of Engineering</div>
-                <div class="course">Automobile Engineering</div>
-                <div class="year">2017 - 2021</div>
-            </div>
-            <div class="education-item">
-                <div class="institute">Masai School</div>
-                <div class="degree">Full Stack Development</div>
-                <div class="year">Nov 2024 - Present</div>
-            </div>
-        </section>
-        <!--Section 3: Porjects-->
-        <h1 class="project-header" id="project">My Projects</h1>
-        <div class="project-container">
-            <!-- Yoga Website Project Card -->
-            <div class="project-card">
-                <img src="./images/yoga.png" alt="Mindful Stretch (Yoga Website)" />
-                <h2>Mindful Stretch (Yoga Website)</h2>
-                <p><strong>Personal/Group:</strong> Individual</p>
-                <p>
-                    <strong>Description:</strong> A modern and responsive yoga website designed to promote health and
-                    mindfulness. It features a clean UI with structured sections, making it user-friendly and engaging.
-                </p>
-                <p><strong>Features:</strong></p>
-                <ul>
-                    <li>Post & Engage: Share yoga poses with images, tips, and insights.</li>
-                    <li>Personalized Experience: Get tailored recommendations based on skill level.</li>
-                    <li>Form: Fill the form every time to keep working out and let others get inspired.</li>
-                </ul>
-                <p><strong>Techstack:</strong> HTML, CSS, JavaScript, React.js, Firebase</p>
-                <p>
-                    <strong>GitHub:</strong> <a href="https://github.com/oSai9951/yoga-website"
-                        target="_blank">github.com/oSai9951/yoga-website</a>
-                </p>
-                <p>
-                    <strong>Deployed:</strong> <a href="https://osai9951.github.io/yoga-website/"
-                        target="_blank">osai9951.github.io/yoga-website/</a>
-                </p>
-            </div>
-            <!-- E-commerce Website Project Card -->
-            <div class="project-card">
-                <img src="./images/voguecart.png" alt="VogueCart (E-commerce Project)" />
-                <h2>VogueCart (E-commerce Project)</h2>
-                <p><strong>Personal/Group:</strong> 3 members</p>
-                <p>
-                    <strong>Description:</strong> VogueCart is a comprehensive online marketplace designed to enhance
-                    the shopping experience by offering a vast range of products across multiple categories. It provides
-                    a user-friendly interface with modern, responsive design ensuring seamless functionality.
-                </p>
-                <p><strong>Features:</strong></p>
-                <ul>
-                    <li>Responsive landing page with seamless product integration and dynamic cart functionality.</li>
-                    <li>Optimized user experience with detailed product display and cross-device compatibility.</li>
-                    <li>Admin Dashboard: Dedicated portal for managing products, orders, users, and reports efficiently.
-                    </li>
-                </ul>
-                <p><strong>Techstack:</strong> HTML, CSS, JavaScript, Firebase</p>
-                <p>
-                    <strong>GitHub:</strong> <a href="https://github.com/narsijangid/B42_WEB_003_Web-Wizards"
-                        target="_blank">github.com/narsijangid/B42_WEB_003_Web-Wizards</a>
-                </p>
-                <p>
-                    <strong>Deployed:</strong> <a href="https://narsijangid.github.io/B42_WEB_003_Web-Wizards/"
-                        target="_blank">narsijangid.github.io/B42_WEB_003_Web-Wizards/</a>
-                </p>
-            </div>
+        <div class="skills-box">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+          />
+          <p>CSS</p>
         </div>
 
-        <!--achievement-->
-        <section class="certification-section" id="certificate">
-            <h2>Certifications</h2>
-            <div class="certificates">
-              <!-- Certificate 1 -->
-              <div class="certificate">
-                <p><strong>Certificate Name:</strong> xto10x Hackathon certification</p>
-                <p>
-                  <strong>Certificate URL:</strong> 
-                  <a href="https://certs.masaischool.com/certificate/xto10jan_fs41_457667" target="_blank">
-                    https://certs.masaischool.com/certificate/xto10jan_fs41_457667
-                  </a>
-                </p>
-                <p><strong>Issued By:</strong> Masai School</p>
-              </div>
-              <!-- Certificate 2 -->
-              <div class="certificate">
-                <p><strong>Certificate Name:</strong> Construct Week Participation Certificate</p>
-                <p>
-                  <strong>Certificate URL:</strong> 
-                  <a href="https://certs.masaischool.com/certificate/cww-b42-fs41_457667" target="_blank">
-                    https://certs.masaischool.com/certificate/cww-b42-fs41_457667
-                  </a>
-                </p>
-                <p><strong>Issued By:</strong> Masai School</p>
-              </div>
-              <!-- Certificate 3 -->
-              <div class="certificate">
-                <p><strong>Certificate Name:</strong> Masai Speaking Marathon</p>
-                <p>
-                  <strong>Certificate URL:</strong> 
-                  <a href="https://certs.masaischool.com/certificate/msm21-fs41-457667" target="_blank">
-                    https://certs.masaischool.com/certificate/msm21-fs41-457667
-                  </a>
-                </p>
-                <p><strong>Issued By:</strong> Masai School</p>
-              </div>
-            </div>
-          </section>
-    </main>
-</body>
+        <div class="skills-box">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+          />
+          <p>JavaScript</p>
+        </div>
 
+        <div class="skills-box">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+          />
+          <p>Tailwindcss</p>
+        </div>
+
+        <div class="skills-box">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+          />
+          <p>React</p>
+        </div>
+
+        <div class="skills-box">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg"
+          />
+
+          <p>Redux Toolkit</p>
+        </div>
+
+        <div class="skills-box">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
+          />
+
+          <p>Node.js</p>
+        </div>
+
+        <div class="skills-box">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
+          />
+
+          <p>Express.js</p>
+        </div>
+
+        <div class="skills-box">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+          />
+
+          <p>MongoDB</p>
+        </div>
+
+        <div class="skills-box">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongoose/mongoose-original.svg"
+          />
+          <p>Mongoose</p>
+        </div>
+      </div>
+    </section>
+    <!-- Projects Section Code -->
+    <section class="project" id="projects">
+      <div class="project-box">
+        <h2 class="heading">My <span>Projects</span></h2>
+
+        <div class="wrapper project-wrapper">
+          <div class="project-items">
+            <img src="assets/mediQuick.png" alt="" class="project-image" />
+            <h2 class="project-title">MediQuick</h2>
+
+            <div class="techStack">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                class="tech-icon"
+              />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+                class="tech-icon"
+              />
+              <img
+                src="https://images.seeklogo.com/logo-png/51/1/shadcn-ui-logo-png_seeklogo-519786.png"
+                class="tech-icon"
+              />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg"
+                class="tech-icon"
+              />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg"
+                class="tech-icon"
+              />
+            </div>
+            <p class="project-description">
+              MediQuick is a fully responsive, modern e-commerce platform
+              designed for an online pharmacy. Built with React, Tailwind CSS,
+              and ShadCN UI, it offers a seamless user experience across
+              devices. The platform focuses on intuitive interactions, secure
+              prescription handling, and real-time order tracking.
+            </p>
+  <div class="button-row">
+    <a href="https://github.com/oSai9951/Online-Pharmacy" target="_blank"><button>GitHub</button></a>
+    <a href="https://gentle-dasik-015e65.netlify.app/" target="_blank"><button>Live</button></a>
+  </div>
+          </div>
+          <div class="project-items">
+            <img
+              src="assets/Ai trip planner.png"
+              alt=""
+              class="project-image"
+            />
+            <h2 class="project-title">AI Trip Planner</h2>
+
+            <div class="techStack">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                class="tech-icon"
+              />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+                class="tech-icon"
+              />
+              <img
+                src="https://images.seeklogo.com/logo-png/51/1/shadcn-ui-logo-png_seeklogo-519786.png"
+                class="tech-icon"
+              />
+                <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg"
+                class="tech-icon"
+              />
+                 <img
+                src="https://www.pngall.com/wp-content/uploads/16/Google-Gemini-Logo-PNG-Cutout.png"
+                class="tech-icon"
+              />
+            </div>
+
+            <p class="project-description">
+              AI Trip Planner is a smart travel planning application that helps
+              users receive personalized recommendations for places to visit,
+              hotel suggestions, and itinerary plans based on trip preferences
+              like destination, budget, duration, and group size.
+            </p>
+  <div class="button-row">
+    <a href="https://github.com/oSai9951/AI-Trip-Website" target="_blank"><button>GitHub</button></a>
+    <a href="https://travel-planner-mu-lyart.vercel.app/" target="_blank"><button>Live</button></a>
+  </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me</span></h2>
+
+      <form id="contactForm">
+        <div class="input-box">
+          <input type="text" placeholder="Full Name" id="fullName" required />
+          <input
+            type="email"
+            name="Email"
+            id="email"
+            placeholder="Email Address"
+            required
+          />
+        </div>
+        <div class="input-box">
+          <input type="number" id="phone" placeholder="Phone Number" />
+          <input
+            type="text"
+            id="subject"
+            placeholder="Email Subject"
+            required
+          />
+        </div>
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+        ></textarea>
+        <input type="submit" value="Send Message" class="btn" />
+      </form>
+    </section>
+
+    <!-- Footer Section -->
+
+    <footer class="footer">
+      <div class="social">
+        <a href="https://www.linkedin.com/in/saimaharana/"
+          ><i class="bx bxl-linkedin-square"></i
+        ></a>
+        <a href="https://github.com/oSai9951"><i class="bx bxl-github"></i></a>
+      </div>
+      <p class="copyright">&copy; Sai Suman Maharana - All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
