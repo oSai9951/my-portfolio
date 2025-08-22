@@ -12,20 +12,20 @@ window.onscroll = ()=>{
 }
 
 function downloadResume(event) {
-  
-    event.preventDefault();
+  event.preventDefault();
 
-    // open in new tab
-    window.open("https://drive.google.com/file/d/1f0Z8dCm-sFXMQVDcL2dfdnkyIQ3E00Kh/view?usp=sharing", "_blank");
+  // Open in new tab (view only)
+  window.open("https://drive.google.com/file/d/1f0Z8dCm-sFXMQVDcL2dfdnkyIQ3E00Kh/view?usp=sharing", "_blank");
 
-    // trigger download
-    const link = document.createElement("a");
-    link.href = "https://drive.google.com/uc?export=download&id=1f0Z8dCm-sFXMQVDcL2dfdnkyIQ3E00Kh";
-    link.download = "Sai_Suman_Maharana_Resume.pdf"; // optional custom name
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  }
+  // Trigger direct download
+  const link = document.createElement("a");
+  link.href = "https://drive.google.com/uc?export=download&id=1f0Z8dCm-sFXMQVDcL2dfdnkyIQ3E00Kh";
+  link.setAttribute("download", "Sai_Suman_Maharana_Resume.pdf"); 
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+
 
 document.getElementById("contactForm").addEventListener("submit", function(e) {
   e.preventDefault();
